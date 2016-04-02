@@ -14,6 +14,8 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'materialize-sass'
 gem 'devise'
 gem "paperclip", "~> 4.3"
+gem 'will_paginate', '~> 3.0.6'
+gem 'will_paginate-materialize'
 
 
 group :development, :test do
