@@ -1,5 +1,3 @@
-<p id="notice"><%= notice %></p>
-
 <div class="row">
  
  	<div class="col l6">
@@ -16,7 +14,7 @@
   <%= form_tag compra_path(slug: @content.slug) do %>
   <script
     src="https://checkout.stripe.com/checkout.js" class="stripe-button"
-    data-key="<%= Rails.configuration.stripe(:publishable_key) %>"
+    data-key="<%= Rails.configuration.stripe[:publishable_key] %>"
     data-amount="<%= (@content.price * 100).floor %>"
     data-name="AmbraMarket"
     data-description="<%= @content.titolo %>"

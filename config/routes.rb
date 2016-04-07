@@ -6,7 +6,7 @@ Rails.application.routes.draw do
 
   get 'about' => 'pages#about'
 
-  post '/compra/:slug', to: 'transaction#create', as: :compra
+  post '/compra/:slug', to: 'transactions#create', as: :compra
   get '/pickup/:guid', to: 'transactions#pickup', as: :pickup
 
   # The priority is based upon order of creation: first created -> highest priority.

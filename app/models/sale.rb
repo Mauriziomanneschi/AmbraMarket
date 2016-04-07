@@ -14,7 +14,7 @@ class Sale < ActiveRecord::Base
      event :running, after: :charge_card do
      	transitions from: :sleeping, to: :running
      end
-    event :completed do
+    event :complete do
     	transitions from: :running, to: :completed
     end
     event :fail do
@@ -31,8 +31,7 @@ class Sale < ActiveRecord::Base
 	 			amount: self.amount,
 	 			currency: "eur",
 	 			card: self.stripe_token,
-	 			description: "vendita di un contenuto"
-	 			)
+	 			description: "vendita di un contenuto")
 	 		self.update(stripe_id: charge.id)
 	 		self.complete!
 
