@@ -76,6 +76,8 @@ GEM
       railties (>= 4.0, < 5.1)
     erubis (2.7.0)
     execjs (2.6.0)
+    font-awesome-sass (4.5.0)
+      sass (>= 3.2)
     friendly_id (5.1.0)
       activerecord (>= 4.0.0)
     globalid (0.3.6)
@@ -98,7 +100,6 @@ GEM
     materialize-sass (0.97.5)
       sass (~> 3.3)
     mime-types (2.99.1)
-    mime-types-data (3.2016.0221)
     mimemagic (0.3.0)
     mini_portile2 (2.0.0)
     minitest (5.8.4)
@@ -209,6 +210,7 @@ DEPENDENCIES
   coffee-rails (~> 4.1.0)
   devise
   dotenv-rails
+  font-awesome-sass
   friendly_id (~> 5.1.0)
   jbuilder (~> 2.0)
   jquery-rails
